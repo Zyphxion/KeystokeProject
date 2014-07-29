@@ -119,6 +119,7 @@ div.headbar {
 	width: 100%;
 	padding:5px 10px;
 	position: fixed;
+	text-align:left; 
 	z-index: 2;
 	background-color:#EF4D23;
 }

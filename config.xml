@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.keystoke.project"
+        versionCode = "10"
+        version     = "1.1.0">
+ 
+    <name>Keystoke App Estimator</name>
+ 
+    <description>
+        Project for Keystoke job application
+    </description>
+ 
+    <author href="http://www.markescobedo.com" email="mark@markescobedo.com">
+        Mark Escobedo
+    </author>
+ 
+	<icon src="img/keystokeicon.png" gap:platform="android" gap:qualifier="mdpi" />
+	
+	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+	
+</widget>
+
+
+
+
+
