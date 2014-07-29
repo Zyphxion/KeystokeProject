@@ -110,9 +110,7 @@ div.center {
     height: auto;
     position: absolute;
     top: 5%;
-    right: 10px;
     bottom: 5%;
-    left: 10px;
-    margin: auto;
+    margin: 0px 10px;
     text-align: center;
 }
