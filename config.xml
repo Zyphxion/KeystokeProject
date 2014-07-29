@@ -17,7 +17,7 @@
  
 	<icon src="img/keystokeicon.png" gap:platform="android" gap:qualifier="mdpi" />
 	
-	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+	<preference name="android-windowSoftInputMode" value="adjustPan" />
 	
 </widget>
 
