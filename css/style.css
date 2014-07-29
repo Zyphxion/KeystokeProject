@@ -28,7 +28,7 @@ body{
 
 
 
-a, a:visited {
+a, a:hover {
 	color:#ffffff;
 	display:inline-block;
 	padding:5px 10px;
@@ -44,7 +44,7 @@ a, a:visited {
 	transition:background-color 0.25s;
 }
 
-a:hover{
+a:visited{
 	text-decoration:none;
 	color:#515A5F;
 }
@@ -110,6 +110,7 @@ div.center {
 	height: auto; 
 	position: fixed; 
 	top: 5%; 
+	bottom: 5%;
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
@@ -118,7 +119,7 @@ div.centerbuttons {
 	width: 100%;
 	height: auto; 
 	position: fixed; 
-	top: 30%; 
+	top: 20%; 
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
