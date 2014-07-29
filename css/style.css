@@ -127,7 +127,7 @@ div.center {
 	width: 90%;
 	height: auto; 
 	position: absolute; 
-	top: 15%; 	
+	top: 10%; 	
 	bottom: 5%;
 	margin-left: 5%;
 	text-align:center; 
@@ -138,7 +138,7 @@ div.centerbuttons {
 	width: 100%;
 	height: auto; 
 	position: absolute; 
-	top: 25%; 
+	top: 20%; 
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
