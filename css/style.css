@@ -114,8 +114,9 @@ div.center {
 	width: 90%;
 	height: auto; 
 	position: absolute; 
-	top: 5%; 
+	top: 5%; 	
 	bottom: 5%;
+	margin-left: 5%;
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
