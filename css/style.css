@@ -111,12 +111,11 @@ h4 {
 
 
 div.center {
-	width: 100%;
+	width: 90%;
 	height: auto; 
 	position: absolute; 
 	top: 5%; 
-	left: 5%;
-	right: 5%;
+	bottom: 5%;
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
