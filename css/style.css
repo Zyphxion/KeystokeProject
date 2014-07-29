@@ -112,5 +112,16 @@ div.center {
 	top: 5%; 
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
-	-webkit-overflow-scrolling: touch;
 }
+
+div.centerbuttons {
+	width: 100%;
+	height: auto; 
+	position: fixed; 
+	top: 30%; 
+	text-align:center; 
+	-webkit-backface-visibility: hidden;
+}
+
+
+
