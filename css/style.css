@@ -44,6 +44,22 @@ a, a:hover, a:visited {
 	transition:background-color 0.25s;
 }
 
+a.expand, a.expand:hover, a.expand:visited {
+	color:#ffffff;
+	display:inline-block;
+	padding:3px 7px;
+	margin:10px auto 3px;
+	background-color:#EF4D23;
+	font-weight:bold;
+	border-radius:2px;
+	font-size:12px;
+	text-decoration:none;
+	
+	-webkit-transition:background-color 0.25s;
+	-moz-transition:background-color 0.25s;
+	transition:background-color 0.25s;
+}
+
 a.normalize, a.normalize:visited{
 	color:#EF4D23;
 	background-color:#FFFFFF;
@@ -103,6 +119,7 @@ div.headbar {
 	width: 100%;
 	padding:5px 10px;
 	position: fixed;
+	z-index: 2;
 	background-color:#EF4D23;
 }
 	
