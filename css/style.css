@@ -115,8 +115,8 @@ div.center {
 	height: auto; 
 	position: absolute; 
 	top: 5%; 
-	bottom: 5%;
-	padding: 0px 5px;
+	left: 5%;
+	right: 5%;
 	text-align:center; 
 	-webkit-backface-visibility: hidden;
 }
