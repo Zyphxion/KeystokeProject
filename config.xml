@@ -17,6 +17,7 @@
  
 	<icon src="img/keystokeicon.png" gap:platform="android" gap:qualifier="mdpi" />
 	
+	<preference name="fullscreen" value="true" />
 	<preference name="android-windowSoftInputMode" value="adjustPan" />
 	<preference name="permissions" value="none"/>
 	
