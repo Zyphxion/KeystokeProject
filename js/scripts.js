@@ -1,4 +1,4 @@
-var keystokePageApp = angular.module('keystokePageApp', []);
+var keystokePageApp = angular.module('keystokePageApp', ['ngRoute']);
 
 keystokePageApp.config(function ($routeProvider) {
 	$routeProvider
@@ -93,33 +93,17 @@ keystokePageApp.controller('DataController', function($scope, Data) {
 	}
 	
 	$scope.sendEmail = function(){
+		var path = 'http://pacific-lowlands-3364.herokuapp.com/sendmail';
 		var params = {
-		  "From" : "mark@markescobedo.com",
-		  "To" : $scope.data.email,
-		  "Cc" : "zyph25@gmail.com",
-		  "Subject" : "Keystoke App Estimation",
-		  "TextBody" : "Your estimated total for your app is: " + $scope.data.total,
-		  "ReplyTo" : "mark@markescobedo.com",
-		  "Headers" : [{ "Name" : "CUSTOM-HEADER", "Value" : "value" }],
-		  "TrackOpens" : true
+			"email" : $scope.data.email,
+		    "total": $scope.data.total
 		};
-		var path = 'http://api.postmarkapp.com/email';
-		var form = document.createElement("form");
-		form.setAttribute("method", "POST");
-		form.setAttribute("action", path);
+		var http = new XMLHttpRequest();
+		http.open("POST", path, true);
+		http.setRequestHeader("Content-Type", "application/json");
+		alert(JSON.stringify(params));
+		http.send(JSON.stringify(params));
 		
-		for(var key in params) {
-			if(params.hasOwnProperty(key)) {
-				var hiddenField = document.createElement("input");
-				hiddenField.setAttribute("type", "hidden");
-				hiddenField.setAttribute("name", key);
-				hiddenField.setAttribute("value", params[key]);
-
-				form.appendChild(hiddenField);
-			 }
-		}
-		document.body.appendChild(form);
-		form.submit();
 	}
 	
 });
